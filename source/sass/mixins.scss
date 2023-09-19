@@ -1,0 +1,70 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover:not([disabled]) {
+    @content;
+  }
+}
+
+@mixin focus {
+  &:focus-visible:not([disabled]) {
+    @content;
+  }
+}
+
+@mixin focus-within {
+  &:focus-within:not([disabled]) {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active:not([disabled]) {
+    @content;
+  }
+}
+
+@mixin disabled {
+  &[disabled] {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  @include hover {
+    @content;
+  }
+
+  @include focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-within {
+  @include hover {
+    @content;
+  }
+
+  @include focus-within {
+    @content;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// ---------------------------------
+
+// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
+// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта

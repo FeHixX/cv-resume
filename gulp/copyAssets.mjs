@@ -1,0 +1,20 @@
+import gulp from 'gulp';
+
+const copyImages = () =>
+  gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
+      .pipe(gulp.dest('build'));
+
+const copy = () =>
+  gulp.src([
+    'source/**.html',
+    'source/fonts/**',
+    'source/img/**',
+    '!source/img/sprite/**',
+    'source/favicon/**',
+    'source/*.webmanifest'
+  ], {
+    base: 'source',
+  })
+      .pipe(gulp.dest('build'));
+
+export {copy, copyImages};

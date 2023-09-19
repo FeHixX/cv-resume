@@ -1,0 +1,22 @@
+.resume {
+  display: grid;
+  align-content: start;
+  background-color: #ffffff;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 548px 1fr;
+
+  img {
+    height: 100%;
+    background-color: $color-valhalla;
+    grid-area: 1/1/2/2;
+    object-fit: cover;
+  }
+}
+
+.resume__about {
+  grid-area: 1/2/3/3;
+}
+
+.resume__info {
+  grid-area: 2/1/3/2;
+}

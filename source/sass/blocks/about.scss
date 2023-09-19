@@ -1,0 +1,112 @@
+.about {
+  padding-top: 151px;
+}
+
+.about__header {
+  padding: 65px 15px 82px 74px;
+  background-color: $color-tangerine-yellow;
+}
+
+.about__title {
+  margin: 0 0 8px;
+  font-weight: 500;
+  font-size: 51px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.about__profession {
+  margin: 0 0 0 3px;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 52px 91px 50px 78px;
+  list-style-type: none;
+}
+
+.about__item {
+  margin: 0 0 70px;
+}
+
+.about__subtitle {
+  position: relative;
+  margin: 0 0 45px;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-tangerine-yellow;
+  }
+}
+
+.about__description {
+  margin: 0;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.about__experience-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about__experience-item {
+  display: grid;
+  gap: 0 70px;
+  grid-template-columns: auto 1fr;
+}
+
+.experience__group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+  grid-area: 1/2/2/3;
+}
+
+.about__position {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__company {
+  margin: 0;
+}
+
+.about__time {
+  grid-area: 1/1/2/2;
+}
+
+.about__technologies {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__technology {
+  &::before {
+    content: "➣";
+    padding-right: 5px;
+  }
+}
