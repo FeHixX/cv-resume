@@ -63,9 +63,12 @@
 }
 
 .about__experience-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  gap: 25px 0;
 }
 
 .about__experience-item {
