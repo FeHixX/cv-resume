@@ -19,7 +19,10 @@
     <main class="main">
       <h1 class="visually-hidden">Мое резюме.</h1>
       <section class="resume container">
-        <img src="./img/foto.jpg" width="462" height="548" alt="Фото.">
+        <picture>
+          <source type="image/webp" srcset="./img/foto@1x.webp, ./img/foto@2x.webp 2x" width="462" height="548">
+          <img src="./img/foto@1x.jpg" srcset="./img/foto@2x.jpg 2x" width="462" height="548" alt="Фото.">
+        </picture>
         <div class="resume__about about">
           <div class="about__header">
             <h2 class="about__title"><span>Дмитрий</span> Геращенко</h2>
@@ -57,6 +60,35 @@
                 <li class="about__technology">Отзывчивый дизайн</li>
                 <li class="about__technology">Адаптивный дизайн</li>
                 <li class="about__technology">Mobile first</li>
+              </ul>
+            </li>
+            <li class="about__item">
+              <h3 class="about__subtitle">Проекты</h3>
+              <ul class="about__projects">
+                <li class="about__project">
+                  <a href="https://fehixx.github.io/Project-Fitness/" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/project/project-1@1x.webp, ./img/project/project-1@2x.webp 2x" width="202" height="348">
+                      <img src="./img/project/project-1@1x.jpg" srcset="./img/project/project-1@2x.jpg 2x" width="202" height="348" alt="Проект: Фитнес.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="about__project">
+                  <a href="https://fehixx.github.io/Project-LifeTour/" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/project/project-2@1x.webp, ./img/project/project-2@2x.webp 2x" width="202" height="348">
+                      <img src="./img/project/project-2@1x.jpg" srcset="./img/project/project-2@2x.jpg 2x" width="202" height="348" alt="Проект: Путешествия.">
+                    </picture>
+                  </a>
+                </li>
+                <li class="about__project">
+                  <a href="https://fehixx.github.io/Project-Masa/" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/project/project-3@1x.webp, ./img/project/project-3@2x.webp 2x" width="202" height="348">
+                      <img src="./img/project/project-3@1x.jpg" srcset="./img/project/project-3@2x.jpg 2x" width="202" height="348" alt="Проект: Маса.">
+                    </picture>
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>

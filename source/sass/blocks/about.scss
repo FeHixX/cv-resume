@@ -24,18 +24,23 @@
 }
 
 .about__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 52px 91px 50px 78px;
   list-style-type: none;
+  gap: 50px 0;
 }
 
 .about__item {
-  margin: 0 0 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
 }
 
 .about__subtitle {
   position: relative;
-  margin: 0 0 35px;
+  margin: 0;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
@@ -109,4 +114,13 @@
     padding-right: 5px;
     color: $color-tangerine-yellow;
   }
+}
+
+.about__projects {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
