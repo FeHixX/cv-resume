@@ -1,5 +1,5 @@
 .info {
-  max-width: 462px;
+  width: 346px;
   color: $color-default-white;
   background-color: $color-black-russian-1;
 }
@@ -8,16 +8,22 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 71px 35px 71px 90px;
+  padding: 53px 24px 46px 67px;
   list-style-type: none;
-  gap: 60px 0;
+  gap: 40px 0;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  gap: 36px 0;
 }
 
 .info__subtitle {
   position: relative;
-  margin: 0 0 45px;
+  margin: 0;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 17px;
   color: $color-tangerine-yellow;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -25,8 +31,8 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -20px;
-    width: calc(100% + 35px);
+    bottom: -17px;
+    width: calc(100% + 24px);
     height: 2px;
     background-color: $color-tangerine-yellow;
   }
@@ -36,9 +42,9 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 0 0 28px;
+  padding: 0 0 0 20px;
   list-style-type: none;
-  gap: 25px 0;
+  gap: 20px 0;
 }
 
 .info__education {
@@ -48,29 +54,60 @@
 }
 
 .info__header {
-  margin: 0 0 4px;
+  margin: 0;
   font-weight: 600;
-  font-size: 19px;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  a {
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $color-tangerine-yellow;
+    }
+
+    @include active {
+      color: rgba($color-tangerine-yellow, 0.7);
+    }
+  }
 }
 
 .info__name {
   display: block;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 12px;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-tangerine-yellow;
+  }
+
+  @include active {
+    color: rgba($color-tangerine-yellow, 0.7);
+  }
 }
 
 .info__time {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .info__certificates {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 0 0 28px;
+  padding: 0 0 0 20px;
   list-style-type: none;
-  font-size: 16px;
-  gap: 25px 0;
+  font-size: 12px;
+  gap: 17px 0;
+
+  a {
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $color-tangerine-yellow;
+    }
+
+    @include active {
+      color: rgba($color-tangerine-yellow, 0.7);
+    }
+  }
 }

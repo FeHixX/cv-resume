@@ -1,5 +1,3 @@
 .main {
-  background-image: url("../img/background.gif");
-  background-size: 100%;
-  background-color: $color-black-russian-3;
+  background: $color-black-russian-3 url("../img/background.gif") 0/100% no-repeat;
 }
