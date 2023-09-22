@@ -114,6 +114,8 @@
 }
 
 .about__technology {
+  display: flex;
+
   &::before {
     content: "➣";
     padding-right: 5px;
