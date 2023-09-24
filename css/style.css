@@ -651,7 +651,7 @@ button,
 }
 
 .main {
-  background: #171820 url("../img/background.gif") 0/100% no-repeat;
+  background: #171820 url("../img/background.gif") 0/100% repeat;
 }
 
 .resume {
