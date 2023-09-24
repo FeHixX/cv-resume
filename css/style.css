@@ -723,6 +723,12 @@ button,
   letter-spacing: 5px;
 }
 
+.about__level {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
 .about__list {
   display: -webkit-box;
   display: -ms-flexbox;
