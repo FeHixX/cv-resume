@@ -657,6 +657,8 @@ button,
 .resume {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 410px auto;
+  grid-template-rows: 410px auto;
 }
 
 .resume img {
