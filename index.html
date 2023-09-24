@@ -31,13 +31,28 @@
           <ul class="about__list">
             <li class="about__item">
               <h3 class="about__subtitle">Обо мне</h3>
-              <p class="about__description">Отзывчивый, ответственный, с&nbsp;чувством юмора, не&nbsp;ищу легких путей, люблю разбираться с&nbsp;чем то&nbsp;новым и&nbsp;не&nbsp;понятным.</p>
+              <div class="about__description-group">
+                <p class="about__description">Отзывчивый, ответственный, с&nbsp;чувством юмора, не&nbsp;ищу легких путей, люблю разбираться с&nbsp;чем то&nbsp;новым и&nbsp;не&nbsp;понятным. Имею огромное желание развиваться в&nbsp;выбранной мною области программирования Front-end&nbsp;&mdash; Fullstack.</p>
+                <p class="about__description">Есть куда расти:</p>
+                <ul class="about__stature-list">
+                  <li>стать &laquo;мидл-разработчиком&raquo; (на&nbsp;данный момент);</li>
+                  <li>пройти курс <a href="https://htmlacademy.ru/profession/fullstack" target="_blank">Профессия &laquo;Фулстек-разработчик&raquo;</a>:
+                    <ul>
+                      <li>углубление в&nbsp;JavaScript;</li>
+                      <li>изучение React;</li>
+                      <li>изучение Node.js;</li>
+                      <li>изучение TypeScript;</li>
+                    </ul>
+                  </li>
+                  <li>выучить английский;</li>
+                </ul>
+              </div>
             </li>
             <li class="about__item">
               <h3 class="about__subtitle">Опыт работы</h3>
               <ul class="about__experience-list">
                 <li class="about__experience-item">
-                  <div class="about__experience__group">
+                  <div class="about__experience-group">
                     <h4 class="about__position">Студент</h4>
                     <p class="about__company">HTML Academy/Санкт-Петербург</p>
                   </div>
@@ -49,22 +64,22 @@
             </li>
             <li class="about__item">
               <h3 class="about__subtitle">Используемые технологии</h3>
-              <ul class="about__technologies">
-                <li class="about__technology">HTML/семантика</li>
-                <li class="about__technology">СSS/SASS</li>
-                <li class="about__technology">JavaScript</li>
-                <li class="about__technology">BEM</li>
-                <li class="about__technology">Gulp</li>
-                <li class="about__technology">Git/GitHub</li>
-                <li class="about__technology">Figma</li>
-                <li class="about__technology">Mobile First/Desktop First</li>
-                <li class="about__technology">Отзывчивый/адаптивный дизайн</li>
+              <ul class="about__technology-list">
+                <li>HTML/семантика</li>
+                <li>СSS/SASS</li>
+                <li>JavaScript</li>
+                <li>BEM</li>
+                <li>Gulp</li>
+                <li>Git/GitHub</li>
+                <li>Figma</li>
+                <li>Mobile First/Desktop First</li>
+                <li>Отзывчивый/адаптивный дизайн</li>
               </ul>
             </li>
             <li class="about__item">
               <h3 class="about__subtitle">Проекты</h3>
-              <ul class="about__projects">
-                <li class="about__project">
+              <ul class="about__project-list">
+                <li>
                   <a class="about__project-link" href="https://fehixx.github.io/Project-Fitness/" target="_blank">
                     <picture>
                       <source type="image/webp" srcset="./img/project/project-1@1x.webp, ./img/project/project-1@2x.webp 2x" width="202" height="348">
@@ -72,7 +87,7 @@
                     </picture>
                   </a>
                 </li>
-                <li class="about__project">
+                <li>
                   <a class="about__project-link" href="https://fehixx.github.io/Project-LifeTour/" target="_blank">
                     <picture>
                       <source type="image/webp" srcset="./img/project/project-2@1x.webp, ./img/project/project-2@2x.webp 2x" width="202" height="348">
@@ -80,7 +95,7 @@
                     </picture>
                   </a>
                 </li>
-                <li class="about__project">
+                <li>
                   <a class="about__project-link" href="https://fehixx.github.io/Project-Masa/" target="_blank">
                     <picture>
                       <source type="image/webp" srcset="./img/project/project-3@1x.webp, ./img/project/project-3@2x.webp 2x" width="202" height="348">
@@ -93,11 +108,11 @@
             <li class="about__item">
               <h3 class="about__subtitle">Языки</h3>
               <ul class="about__language-list">
-                <li class="about__language-item">
+                <li>
                   <p class="about__language">Русский</p>
                   <div class="about__progress about__progress--russian"></div>
                 </li>
-                <li class="about__language-item">
+                <li>
                   <p class="about__language">English</p>
                   <div class="about__progress about__progress--english">
                     <span>A1</span>
@@ -111,8 +126,8 @@
           <ul class="info__list">
             <li class="info__item">
               <h3 class="info__subtitle">Образование</h3>
-              <ul class="info__educations">
-                <li class="info__education">
+              <ul class="info__educations-list">
+                <li>
                   <h4 class="info__header">
                     <a href="https://htmlacademy.ru/profession/frontender" target="_blank">Фронтенд-разработчик</a>
                   </h4>
@@ -121,7 +136,7 @@
                     <time datetime="2022-08-23">2022</time>-<time datetime="2023-09-25">2023</time>
                   </span>
                 </li>
-                <li class="info__education">
+                <li>
                   <h4 class="info__header">
                     <a href="https://vgke.by/tehnik-jelektrik/" target="_blank">Электроснабжение</a>
                   </h4>
@@ -134,34 +149,37 @@
             </li>
             <li class="info__item">
               <h3 class="info__subtitle">Сертификаты</h3>
-              <ul class="info__certificates">
-                <li class="info__certificate">
+              <ul class="info__certificates-list">
+                <li>
                   <a href="https://assets.htmlacademy.ru/certificates/intensive/367/1777645.pdf" target="_blank">HTML и&nbsp;CSS. Профессиональная вёрстка сайтов</a>
                 </li>
-                <li class="info__certificate">
+                <li>
                   <a href="https://assets.htmlacademy.ru/certificates/intensive/369/1777645.pdf" target="_blank">HTML и&nbsp;CSS. Адаптивная вёрстка и&nbsp;автоматизация</a>
                 </li>
-                <li class="info__certificate">
+                <li>
                   <a href="https://assets.htmlacademy.ru/certificates/intensive/371/1777645.pdf" target="_blank">JavaScript. Профессиональная разработка веб-интерфейсов</a>
                 </li>
-                <li class="info__certificate">
+                <li>
                   <a href="https://assets.htmlacademy.ru/certificates/profession/61/1777645.pdf" target="_blank">Профессия «Фронтенд-разработчик»</a>
                 </li>
               </ul>
             </li>
-          </ul>
-          <ul class="info__contacts-list">
-            <li class="info__contact-item">
-              <p class="info__contact-title">Телефон</p>
-              <a class="info__contact-link" href="tel:+375336110168">+375 (33) 611-01-68</a>
-            </li>
-            <li class="info__contact-item">
-              <p class="info__contact-title">Email</p>
-              <a class="info__contact-link" href="mailto:gera.1212@yandex.com">gera.1212@yandex.com</a>
-            </li>
-            <li class="info__contact-item">
-              <p class="info__contact-title">GitHub</p>
-              <a class="info__contact-link" href="https://github.com/FeHixX" target="_blank">https://github.com/FeHixX</a>
+            <li class="info__item">
+              <h3 class="visually-hidden">Контакты.</h3>
+              <ul class="info__contacts-list">
+                <li>
+                  <p class="info__contact-title">Телефон</p>
+                  <a class="info__contact-link" href="tel:+375336110168">+375 (33) 611-01-68</a>
+                </li>
+                <li>
+                  <p class="info__contact-title">Email</p>
+                  <a class="info__contact-link" href="mailto:gera.1212@yandex.com">gera.1212@yandex.com</a>
+                </li>
+                <li>
+                  <p class="info__contact-title">GitHub</p>
+                  <a class="info__contact-link" href="https://github.com/FeHixX" target="_blank">https://github.com/FeHixX</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
