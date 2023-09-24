@@ -664,6 +664,7 @@ button,
 .resume img {
   height: 100%;
   background-color: #2d2f42;
+  border: 1px solid #e8ba00;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
