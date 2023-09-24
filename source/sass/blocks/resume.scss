@@ -5,6 +5,7 @@
   img {
     height: 100%;
     background-color: $color-valhalla;
+    border: 1px solid $color-tangerine-yellow;
     grid-area: 1/1/2/2;
     object-fit: cover;
   }
