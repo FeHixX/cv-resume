@@ -1,8 +1,12 @@
+.about {
+  background-color: $color-black-russian-3;
+}
+
 .about__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 15px;
+  padding: 7% 2%;
   background-color: $color-tangerine-yellow;
   gap: 8px 0;
 }
@@ -10,7 +14,7 @@
 .about__title {
   margin: 0;
   font-weight: 500;
-  font-size: 37px;
+  font-size: 4vw;
   text-transform: uppercase;
   letter-spacing: 4px;
 
@@ -21,14 +25,14 @@
 
 .about__profession {
   margin: 0;
-  font-weight: 500;
-  font-size: 17px;
+  font-size: 2vw;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 .about__level {
   margin: 0;
+  font-size: 2vw;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -37,9 +41,9 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 40px 60px;
+  padding: 7% 10%;
   list-style-type: none;
-  gap: 23px 0;
+  gap: 3vw 0;
 }
 
 .about__item {
@@ -52,7 +56,7 @@
   position: relative;
   margin: 0;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 2vw;
   text-transform: uppercase;
   letter-spacing: 4px;
 
@@ -68,9 +72,10 @@
 }
 
 .about__description-group {
-  font-weight: 500;
-  font-size: 16px;
+  display: flex;
+  flex-direction: column;
   letter-spacing: 0.5px;
+  gap: 2.5vw 0;
 
   ul {
     list-style-type: disc;
@@ -81,8 +86,8 @@
   margin: 0;
 }
 
-.about__description:first-child {
-  margin: 0 0 25px;
+.about__description:last-child {
+  margin: 0;
 }
 
 .about__stature-list {
@@ -107,7 +112,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 25px 0;
+  gap: 2.5vw 0;
 }
 
 .about__experience-item {
@@ -142,7 +147,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 10px;
+  gap: 1vw;
   grid-template-columns: repeat(2, 1fr);
 
   li {

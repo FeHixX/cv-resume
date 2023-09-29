@@ -16,7 +16,7 @@ html {
   font-weight: 500;
   font-size: $fz-default;
   line-height: normal;
-  font-family: $ff-montserrat;
+  font-family: $ff-shantellsans;
   color: $color-default-white;
 
   -webkit-font-smoothing: antialiased;
@@ -112,13 +112,15 @@ input[type="number"] {
 // ios button \ inputs reset
 select,
 textarea,
-input:matches([type="email"],
-  [type="number"],
-  [type="password"],
-  [type="search"],
-  [type="tel"],
-  [type="text"],
-  [type="url"]) {
+input:matches(
+    [type="email"],
+    [type="number"],
+    [type="password"],
+    [type="search"],
+    [type="tel"],
+    [type="text"],
+    [type="url"]
+  ) {
   appearance: none;
 }
 

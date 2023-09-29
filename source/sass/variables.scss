@@ -14,17 +14,20 @@ $color-tangerine-yellow:            #e8ba00;
 $color-valhalla:                    #2d2f42;
 $color-black-russian-1:             #202026;
 $color-black-russian-2:             #292a30;
-$color-black-russian-3:             #171820;
+$color-black-russian-3:             #070709;
+
+$color-snow-drift:                  #dfdfd9;
+$color-ivory:                       #f8f8f6;
 
 // Typography
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
-$fz-default:                        14px;
+$fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-montserrat:                        "Montserrat", "Arial", sans-serif;
+$ff-shantellsans:                        "ShantellSans", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
