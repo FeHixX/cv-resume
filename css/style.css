@@ -645,10 +645,6 @@ button,
   outline: none;
 }
 
-.main {
-  background-color: #070709;
-}
-
 .resume {
   display: -ms-grid;
   display: grid;
