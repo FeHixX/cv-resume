@@ -17,6 +17,10 @@
   padding: 0;
   list-style-type: none;
   gap: 3vw 0;
+
+  @include mobile {
+    gap: 5vw 0;
+  }
 }
 
 .info__item {
@@ -44,6 +48,8 @@
   }
 
   @include mobile {
+    font-size: 3.5vw;
+
     &::before {
       width: 113%;
     }
@@ -96,10 +102,18 @@
   @include active {
     color: rgba($color-tangerine-yellow, 0.7);
   }
+
+  @include mobile {
+    font-size: 2.8vw;
+  }
 }
 
 .info__time {
   font-size: 1.3vw;
+
+  @include mobile {
+    font-size: 2.8vw;
+  }
 }
 
 .info__certificates-list {
@@ -121,6 +135,10 @@
     @include active {
       color: rgba($color-tangerine-yellow, 0.7);
     }
+  }
+
+  @include mobile {
+    font-size: 2.8vw;
   }
 }
 
@@ -184,5 +202,9 @@
 
   @include active {
     color: rgba($color-tangerine-yellow, 0.7);
+  }
+
+  @include mobile {
+    font-size: 2.8vw;
   }
 }

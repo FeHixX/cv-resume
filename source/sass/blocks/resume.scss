@@ -4,6 +4,7 @@
   grid-template-columns: 36% 64%;
 
   @include mobile {
+    font-size: 3vw;
     grid-template-columns: 1fr;
   }
 }
