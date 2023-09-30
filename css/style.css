@@ -1206,7 +1206,7 @@ button,
 
 @media (max-width: 1023px) {
   .resume {
-    font-size: 2.5vw;
+    font-size: 3vw;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -1220,27 +1220,35 @@ button,
   }
 
   .about__title {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
 
   .about__profession {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .about__level {
-    font-size: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .about__list {
+    gap: 5vw 0;
   }
 
   .about__subtitle {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .info {
     padding: 7% 10%;
   }
 
+  .info__list {
+    gap: 5vw 0;
+  }
+
   .info__subtitle {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .info__subtitle::before {
@@ -1248,15 +1256,15 @@ button,
   }
 
   .info__education-name {
-    font-size: 2.3vw;
+    font-size: 2.8vw;
   }
 
   .info__time {
-    font-size: 2.3vw;
+    font-size: 2.8vw;
   }
 
   .info__certificates-list {
-    font-size: 2.3vw;
+    font-size: 2.8vw;
   }
 
   .info__contact-title::before {
@@ -1264,6 +1272,6 @@ button,
   }
 
   .info__contact-link {
-    font-size: 2.3vw;
+    font-size: 2.8vw;
   }
 }
