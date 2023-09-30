@@ -6,6 +6,7 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
   overflow: hidden;
+  user-select: none;
 
   .header,
   .footer {

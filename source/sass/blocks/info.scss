@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 12% 7% 12% 13%;
-  color: $color-default-white;
-  background-color: $color-black-russian-1;
+  background-color: var(--bg-info);
 
   @include mobile {
     padding: 7% 10%;
@@ -34,7 +33,7 @@
   margin: 0;
   font-weight: 600;
   font-size: 2vw;
-  color: $color-tangerine-yellow;
+  color: var(--color-secondary);
   text-transform: uppercase;
   letter-spacing: 3px;
 
@@ -44,7 +43,7 @@
     bottom: -0.8vw;
     width: 108.7%;
     height: 2px;
-    background-color: $color-tangerine-yellow;
+    background-color: var(--color-secondary);
   }
 
   @include mobile {
@@ -78,14 +77,16 @@
   letter-spacing: 1px;
 
   a {
-    transition: color $trans-default;
+    transition:
+      opacity $trans-default,
+      color $trans-default;
 
     @include hover-focus {
-      color: $color-tangerine-yellow;
+      color: var(--color-secondary);
     }
 
     @include active {
-      color: rgba($color-tangerine-yellow, 0.7);
+      opacity: 0.7;
     }
   }
 }
@@ -93,14 +94,16 @@
 .info__education-name {
   display: block;
   font-size: 1.3vw;
-  transition: color $trans-default;
+  transition:
+    opacity $trans-default,
+    color $trans-default;
 
   @include hover-focus {
-    color: $color-tangerine-yellow;
+    color: var(--color-secondary);
   }
 
   @include active {
-    color: rgba($color-tangerine-yellow, 0.7);
+    opacity: 0.7;
   }
 
   @include mobile {
@@ -126,14 +129,16 @@
   gap: 2vw 0;
 
   a {
-    transition: color $trans-default;
+    transition:
+      opacity $trans-default,
+      color $trans-default;
 
     @include hover-focus {
-      color: $color-tangerine-yellow;
+      color: var(--color-secondary);
     }
 
     @include active {
-      color: rgba($color-tangerine-yellow, 0.7);
+      opacity: 0.7;
     }
   }
 
@@ -171,7 +176,7 @@
     z-index: -1;
     width: 139%;
     height: 104%;
-    background-color: $color-black-russian-2;
+    background-color: var(--bg-contact);
   }
 
   &::after {
@@ -182,7 +187,7 @@
     z-index: -1;
     width: 25%;
     height: 104%;
-    background-color: $color-tangerine-yellow;
+    background-color: var(--color-secondary);
   }
 
   @include mobile {
@@ -194,14 +199,16 @@
 
 .info__contact-link {
   font-size: 1.3vw;
-  transition: color $trans-default;
+  transition:
+    opacity $trans-default,
+    color $trans-default;
 
   @include hover-focus {
-    color: $color-tangerine-yellow;
+    color: var(--color-secondary);
   }
 
   @include active {
-    color: rgba($color-tangerine-yellow, 0.7);
+    opacity: 0.7;
   }
 
   @include mobile {

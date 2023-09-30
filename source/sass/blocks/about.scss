@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-black-russian-3;
+  background-color: var(--bg-about);
 }
 
 .about__header {
@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   padding: 7% 2%;
-  background-color: $color-tangerine-yellow;
+  background-color: var(--color-secondary);
   gap: 8px 0;
 }
 
@@ -83,7 +83,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: $color-tangerine-yellow;
+    background-color: var(--color-secondary);
   }
 
   @include mobile {
@@ -108,22 +108,6 @@
 
 .about__description:last-child {
   margin: 0;
-}
-
-.about__stature-list {
-  padding-left: 20px;
-
-  a {
-    transition: color $trans-default;
-
-    @include hover-focus {
-      color: $color-tangerine-yellow;
-    }
-
-    @include active {
-      color: rgba($color-tangerine-yellow, 0.7);
-    }
-  }
 }
 
 .about__experience-list {
@@ -176,7 +160,7 @@
     &::before {
       content: "➣";
       padding-right: 5px;
-      color: $color-tangerine-yellow;
+      color: var(--color-secondary);
     }
   }
 }
@@ -188,6 +172,10 @@
   list-style-type: none;
   gap: 1vw;
   grid-template-columns: repeat(3, 1fr);
+
+  li {
+    border: 1px solid var(--color-secondary);
+  }
 }
 
 .about__project-link {

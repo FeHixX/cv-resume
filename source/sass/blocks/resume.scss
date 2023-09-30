@@ -1,17 +1,29 @@
+:root {
+  --color-secondary: #{$color-neon-blue};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-secondary: #{$color-tangerine-yellow};
+  }
+}
+
 .resume {
   display: grid;
   font-size: 1.5vw;
   grid-template-columns: 36% 64%;
+  grid-template-rows: 40vw auto;
 
   @include mobile {
     font-size: 3vw;
     grid-template-columns: 1fr;
+    grid-template-rows: 113vw auto;
   }
 }
 
 .resume__photo {
   background-color: $color-valhalla;
-  border: 1px solid $color-tangerine-yellow;
+  border: 1px solid var(--color-secondary);
   grid-area: 1/1/2/2;
 
   img {

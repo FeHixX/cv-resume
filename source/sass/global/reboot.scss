@@ -1,3 +1,21 @@
+:root {
+  --color-text: #{$color-default-black};
+  --bg-about: #{$color-ivory};
+  --color-secondary: #{$color-neon-blue};
+  --bg-info: #{$color-snow-drift};
+  --bg-contact: #{$color-concrete};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #{$color-default-white};
+    --bg-about: #{$color-black-russian-3};
+    --color-secondary: #{$color-tangerine-yellow};
+    --bg-info: #{$color-black-russian-1};
+    --bg-contact: #{$color-black-russian-2};
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -17,7 +35,7 @@ html {
   font-size: $fz-default;
   line-height: 1.5;
   font-family: $ff-shantellsans;
-  color: $color-default-white;
+  color: var(--color-text);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +53,7 @@ body {
 }
 
 a {
-  color: $color-default-white;
+  color: var(--color-text);
   text-decoration: none;
   user-select: none;
 }
