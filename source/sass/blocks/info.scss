@@ -4,6 +4,10 @@
   padding: 12% 7% 12% 13%;
   color: $color-default-white;
   background-color: $color-black-russian-1;
+
+  @include mobile {
+    padding: 7% 10%;
+  }
 }
 
 .info__list {
@@ -18,7 +22,7 @@
 .info__item {
   display: flex;
   flex-direction: column;
-  gap: 36px 0;
+  gap: 1.8vw 0;
 }
 
 .info__subtitle {
@@ -33,10 +37,16 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -17px;
+    bottom: -0.8vw;
     width: 108.7%;
     height: 2px;
     background-color: $color-tangerine-yellow;
+  }
+
+  @include mobile {
+    &::before {
+      width: 113%;
+    }
   }
 }
 
@@ -155,6 +165,12 @@
     width: 25%;
     height: 104%;
     background-color: $color-tangerine-yellow;
+  }
+
+  @include mobile {
+    &::before {
+      width: 144%;
+    }
   }
 }
 

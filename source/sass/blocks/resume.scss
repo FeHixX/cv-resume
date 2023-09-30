@@ -2,22 +2,36 @@
   display: grid;
   font-size: 1.5vw;
   grid-template-columns: 36% 64%;
-  grid-template-rows: 35% auto;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resume__photo {
+  background-color: $color-valhalla;
+  border: 1px solid $color-tangerine-yellow;
+  grid-area: 1/1/2/2;
 
   img {
     width: 100%;
     height: 100%;
-    background-color: $color-valhalla;
-    border: 1px solid $color-tangerine-yellow;
-    grid-area: 1/1/2/2;
     object-fit: cover;
   }
 }
 
 .resume__about {
   grid-area: 1/2/3/3;
+
+  @include mobile {
+    grid-area: auto;
+  }
 }
 
 .resume__info {
   grid-area: 2/1/3/2;
+
+  @include mobile {
+    grid-area: auto;
+  }
 }
