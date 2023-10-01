@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 12% 7% 12% 13%;
   background-color: var(--bg-info);
+  transition: background-color $trans-default;
 
   @include mobile {
     padding: 7% 10%;
@@ -36,6 +37,7 @@
   color: var(--color-secondary);
   text-transform: uppercase;
   letter-spacing: 3px;
+  transition: color $trans-default;
 
   &::before {
     content: "";
@@ -44,6 +46,7 @@
     width: 108.7%;
     height: 2px;
     background-color: var(--color-secondary);
+    transition: background-color $trans-default;
   }
 
   @include mobile {
@@ -177,6 +180,7 @@
     width: 139%;
     height: 104%;
     background-color: var(--bg-contact);
+    transition: background-color $trans-default;
   }
 
   &::after {
@@ -188,6 +192,7 @@
     width: 25%;
     height: 104%;
     background-color: var(--color-secondary);
+    transition: background-color $trans-default;
   }
 
   @include mobile {

@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 
+import {setTheme} from './theme';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  setTheme();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

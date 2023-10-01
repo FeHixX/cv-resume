@@ -1,13 +1,16 @@
 .about {
   background-color: var(--bg-about);
+  transition: background-color $trans-default;
 }
 
 .about__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 7% 2%;
   background-color: var(--color-secondary);
+  transition: background-color $trans-default;
   gap: 8px 0;
 }
 
@@ -49,6 +52,26 @@
   }
 }
 
+.about__toggle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 2%;
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  transition: all $trans-default;
+
+  @include hover-focus {
+    color: var(--color-toggle);
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
+}
+
 .about__list {
   display: flex;
   flex-direction: column;
@@ -84,6 +107,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--color-secondary);
+    transition: background-color $trans-default;
   }
 
   @include mobile {
@@ -161,6 +185,7 @@
       content: "➣";
       padding-right: 5px;
       color: var(--color-secondary);
+      transition: color $trans-default;
     }
   }
 }
@@ -175,6 +200,7 @@
 
   li {
     border: 1px solid var(--color-secondary);
+    transition: border $trans-default;
   }
 }
 

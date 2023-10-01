@@ -4,16 +4,16 @@
   --color-secondary: #{$color-neon-blue};
   --bg-info: #{$color-snow-drift};
   --bg-contact: #{$color-concrete};
+  --color-toggle: #{$color-default-white};
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: #{$color-default-white};
-    --bg-about: #{$color-black-russian-3};
-    --color-secondary: #{$color-tangerine-yellow};
-    --bg-info: #{$color-black-russian-1};
-    --bg-contact: #{$color-black-russian-2};
-  }
+:root[data-color-scheme="dark"] {
+  --color-text: #{$color-default-white};
+  --bg-about: #{$color-black-russian-3};
+  --color-secondary: #{$color-tangerine-yellow};
+  --bg-info: #{$color-black-russian-1};
+  --bg-contact: #{$color-black-russian-2};
+  --color-toggle: #{$color-default-black};
 }
 
 *,
@@ -36,6 +36,7 @@ html {
   line-height: 1.5;
   font-family: $ff-shantellsans;
   color: var(--color-text);
+  transition: color $trans-default;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,6 +56,7 @@ body {
 a {
   color: var(--color-text);
   text-decoration: none;
+  transition: color $trans-default;
   user-select: none;
 }
 
@@ -137,8 +139,7 @@ input:matches(
     [type="search"],
     [type="tel"],
     [type="text"],
-    [type="url"]
-  ) {
+    [type="url"]) {
   appearance: none;
 }
 
