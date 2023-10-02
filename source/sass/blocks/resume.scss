@@ -2,25 +2,34 @@
   display: grid;
   font-size: 1.5vw;
   grid-template-columns: 36% 64%;
-  grid-template-rows: 40vw auto;
+  grid-template-rows: minmax(20%, 300px) 1fr;
 
   @include mobile {
     font-size: 3vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 113vw auto;
+    grid-template-rows: auto;
   }
 }
 
 .resume__photo {
-  background-color: $color-valhalla;
-  border: 1px solid var(--color-secondary);
-  transition: border $trans-default;
+  background-color: var(--bg-info);
+  transition: background-color $trans-default;
   grid-area: 1/1/2/2;
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-photo);
+
+    img {
+      max-width: 500px;
+    }
+  }
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 

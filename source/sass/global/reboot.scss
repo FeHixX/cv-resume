@@ -4,7 +4,7 @@
   --color-secondary: #{$color-neon-blue};
   --bg-info: #{$color-snow-drift};
   --bg-contact: #{$color-concrete};
-  --color-toggle: #{$color-default-white};
+  --bg-photo: #{$color-ivory};
 }
 
 :root[data-color-scheme="dark"] {
@@ -13,7 +13,7 @@
   --color-secondary: #{$color-tangerine-yellow};
   --bg-info: #{$color-black-russian-1};
   --bg-contact: #{$color-black-russian-2};
-  --color-toggle: #{$color-default-black};
+  --bg-photo: #{$color-black-russian-3};
 }
 
 *,

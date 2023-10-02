@@ -27,6 +27,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.8vw 0;
+
+  @include mobile {
+    gap: 3vw 0;
+  }
 }
 
 .info__subtitle {
@@ -53,6 +57,7 @@
     font-size: 3.5vw;
 
     &::before {
+      bottom: -1.3vw;
       width: 113%;
     }
   }
